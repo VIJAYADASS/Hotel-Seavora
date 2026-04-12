@@ -1,16 +1,137 @@
-# React + Vite
+# 🏨 Seavora Hotel Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack hotel booking application that allows users to explore rooms, make reservations, and manage bookings. Includes a secure admin panel for managing rooms and booking statuses.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+*(Add your deployed link here if available)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Home Page                       
+| Booking Page                          
+| Admin Dashboard                   
+
+
+---
+
+## 🚀 Features
+
+### 👤 User
+
+* Browse available rooms
+* Book rooms with date selection
+* Secure authentication (Login / Signup)
+
+### 🛠 Admin
+
+* Manage rooms (Add / Update / Delete)
+* View all bookings
+* Update booking status via WhatsApp (Confirmed / Pending)
+
+---
+
+## 🧑‍💻 Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Axios
+* ShadCN UI
+* Lucide React
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB (Mongoose)
+
+---
+
+## 📁 Project Structure
+
+## HOTEL/
+├── src/        # Frontend (React)
+├── backend/    # Backend (Node + Express)
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/VIJAYADASS/hotel-booking.git
+cd hotel-booking
+```
+
+---
+
+## 🔧 Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+### Create a `.env` file inside backend:
+
+```env
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret_key
+PORT=5001
+```
+
+### Run Backend:
+
+```bash
+node server.js
+```
+
+---
+
+## 🎨 Frontend Setup
+
+```bash
+cd ..
+npm install
+npm run dev
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file inside the `backend` folder:
+
+```env
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret_key
+PORT=5001
+```
+
+---
+
+## 🌐 Future Improvements
+
+* 💳 Payment integration
+* 📧 Email notifications
+* 📊 Admin analytics dashboard
+
+
+---
+
+## 📧 Contact
+
+**Vijayadass M**
+Frontend Developer
+GitHub: https://github.com/VIJAYADASS
