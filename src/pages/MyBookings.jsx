@@ -5,14 +5,14 @@ const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
-    // ✅ Move function INSIDE useEffect (best practice)
+     
     const fetchBookings = async () => {
       try {
         const res = await API.get("/bookings");
 
         const confirmed = res.data.filter(
           (b) => b.status === "confirmed" 
-          // User only sees confirmed bookings
+          
         );
 
         setBookings(confirmed);

@@ -46,7 +46,7 @@ const RoomCard = ({ room, fromDate, toDate }) => {
 
         <div className="flex flex-col md:flex-row">
 
-          {/* IMAGE */}
+          
           <div className="w-full md:w-1/2 h-[220px] md:h-auto">
             <img
               src={room?.images?.[0] || "https://via.placeholder.com/400"}
@@ -55,7 +55,7 @@ const RoomCard = ({ room, fromDate, toDate }) => {
             />
           </div>
 
-          {/* CONTENT */}
+          
           <div className="w-full md:w-1/2 p-5 md:p-6 flex flex-col justify-between">
 
             <div>
@@ -67,7 +67,7 @@ const RoomCard = ({ room, fromDate, toDate }) => {
                 {room?.description}
               </p>
 
-              {/* FACILITIES */}
+       
               <div className="flex flex-wrap gap-2 md:gap-3 mb-4">
                 {facilities.map((item, i) => {
                   const Icon = item.icon;
@@ -83,7 +83,7 @@ const RoomCard = ({ room, fromDate, toDate }) => {
                 })}
               </div>
 
-              {/* STATUS */}
+              
               <div className="flex items-center gap-2 mb-2">
                 {isAvailable ? (
                   <>
@@ -103,7 +103,7 @@ const RoomCard = ({ room, fromDate, toDate }) => {
               </div>
             </div>
 
-            {/* BUTTON */}
+            
             <div className="flex justify-between items-center mt-4">
               <Button
                 onClick={handleReserve}

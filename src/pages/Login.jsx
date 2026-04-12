@@ -47,25 +47,25 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center relative mt-0 pt-0">
 
-      {/* ✅ SAME BACKGROUND AS SIGNUP */}
+      
       <img
         src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
         alt="beach"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* ✅ SAME OVERLAY */}
+       
       <div className="absolute inset-0 bg-black/40"></div>
 
-      {/* ✅ SAME CARD */}
+     
       <div className="relative bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 w-[90%] max-w-md">
 
-        {/* ✅ SAME TITLE STYLE */}
+        
         <h2 className="text-3xl font-bold text-center mb-7 text-[#3b2f2f]">
           Login
         </h2>
   
-        {/* ✅ EXACT SAME INPUT STYLE (NO LABELS) */}
+         
         <div className="space-y-4">
 
           <input
@@ -75,7 +75,7 @@ const Login = () => {
             onChange={(e)=>setForm({...form, email:e.target.value})}
           />
 
-          {/* PASSWORD */}
+          
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}
@@ -95,7 +95,7 @@ const Login = () => {
 
         </div>
 
-        {/* ✅ SAME BUTTON STYLE */}
+        
         <button
           onClick={handleLogin}
           disabled={loading}

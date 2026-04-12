@@ -93,7 +93,7 @@ const Reservation = () => {
   return (
     <div className="min-h-screen bg-[#d9cfbd] px-4 md:px-10 py-8">
 
-      {/* 🔙 BACK */}
+       
       <button
         onClick={() => navigate(-1)}
         className="flex items-center gap-2 text-gray-700 mb-6 hover:text-black"
@@ -102,12 +102,12 @@ const Reservation = () => {
         Back
       </button>
 
-      {/* TITLE */}
+       
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-10 text-[#3b2f2f]">
         Room Reservation
       </h1>
 
-      {/* ROOM DETAILS */}
+      
       <div className="max-w-4xl mx-auto bg-[#f3f3f3] rounded-2xl shadow-md p-6 mb-10">
         <h3 className="font-semibold mb-4 text-lg">
           Selected Room Details
@@ -122,7 +122,7 @@ const Reservation = () => {
         </div>
       </div>
 
-      {/* FORM */}
+     
       <form
         onSubmit={handleSubmit}
         className="max-w-4xl mx-auto bg-[#f3f3f3] rounded-2xl shadow-md p-6 md:p-8"
@@ -130,7 +130,7 @@ const Reservation = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
 
-          {/* FULL NAME */}
+           
           <div>
             <label className="flex items-center gap-1 text-sm font-semibold mb-2">
               FULL NAME
@@ -145,7 +145,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* EMAIL */}
+          
           <div>
             <label className="flex items-center gap-1 text-sm font-semibold mb-2">
               EMAIL
@@ -160,7 +160,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* PHONE */}
+          
           <div className="md:col-span-2">
             <label className="flex items-center gap-1 text-sm font-semibold mb-2">
               PHONE NUMBER
@@ -175,7 +175,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* ROOM TYPE */}
+          
           <div>
             <label className="flex items-center gap-1 text-sm font-semibold mb-2">
               ROOM TYPE
@@ -197,7 +197,7 @@ const Reservation = () => {
             </select>
           </div>
 
-          {/* GUESTS */}
+          
           <div>
             <label className="text-sm font-semibold mb-2 block">
               NUMBER OF GUESTS (MAX: 7)
@@ -212,7 +212,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* CHECK-IN */}
+          
           <div>
             <label className="flex items-center gap-1 text-sm font-semibold mb-2">
               CHECK-IN DATE
@@ -227,7 +227,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* CHECK-OUT */}
+          
           <div>
             <label className="flex items-center gap-1 text-sm font-semibold mb-2">
               CHECK-OUT DATE
@@ -242,7 +242,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* SPECIAL REQUEST */}
+          
           <div className="md:col-span-2">
             <label className="text-sm font-semibold mb-2 block">
               SPECIAL REQUESTS
@@ -258,7 +258,7 @@ const Reservation = () => {
 
         </div>
 
-        {/* BUTTON */}
+     
         <button
           type="submit"
           className="w-full mt-8 bg-[#c58c80] text-white py-3 rounded-xl shadow-md hover:bg-[#b67a6f] transition"

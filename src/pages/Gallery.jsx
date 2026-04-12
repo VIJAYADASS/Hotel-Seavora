@@ -92,7 +92,7 @@ export default function Gallery() {
 
       <div className="max-w-full mx-auto px-4 md:px-6 py-3 ">
 
-        {/* HEADER */}
+         
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold ">Photo Gallery</h1>
           <p className="text-gray-500 mt-4">
@@ -100,10 +100,10 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* MAIN GRID */}
+         
         <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8 mt-8">
 
-          {/* MOBILE DROPDOWN */}
+           
           <div className="block md:hidden">
             <div className="bg-[#efe5d6] rounded-2xl p-6 shadow-md sticky top-20">
             <h2 className="text-lg font-semibold mb-4 ">Room Type</h2>
@@ -119,7 +119,7 @@ export default function Gallery() {
               </div> 
           </div>
 
-          {/* SIDEBAR (FULL RESTORED) */}
+           
           <aside className="hidden md:block">
             <div className="bg-[#efe5d6] rounded-2xl p-6 shadow-md sticky top-20">
               <h2 className="text-lg font-semibold mb-4 ">Room Types</h2>
@@ -141,7 +141,7 @@ export default function Gallery() {
             </div>
           </aside>
 
-          {/* MAIN */}
+           
          <main ref={gridRef}>
             <div className="bg-[#efe5d6] rounded-2xl p-4 md:p-6 shadow-md">
 
@@ -177,7 +177,7 @@ export default function Gallery() {
 
         </div>
 
-        {/* PLAN */}
+       
         <div className="bg-white  rounded-xl text-center py-8 px-4 shadow-md mt-10 mb-0">
           <h2 className="text-2xl font-semibold">Plan Your Visit</h2>
           <p className="text-gray-500 mt-2">
@@ -192,7 +192,7 @@ export default function Gallery() {
 
       </div>
 
-      {/* MODAL */}
+      
       {preview && (
         <div
           onClick={() => setPreview(null)}

@@ -4,11 +4,7 @@ import Navbar from "./Navbar";
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-[#f8f5f0]">
-
-      {/* NAVBAR */}
-      <Navbar />
-
-      {/* ✅ REMOVE TOP PADDING */}
+      <Navbar />     
       <main className="pt-0">
         {children}
       </main>

@@ -14,7 +14,7 @@ const Rooms = () => {
 
   const [sort] = useState("default");
 
-  // FETCH ROOMS
+ 
   useEffect(() => {
     const fetchRooms = async () => {
       try {
@@ -31,7 +31,7 @@ const Rooms = () => {
     fetchRooms();
   }, []);
 
-  // SORT
+ 
   useEffect(() => {
     let temp = [...rooms];
 
@@ -52,12 +52,12 @@ const Rooms = () => {
 
   <div className="max-w-6xl mx-auto px-6">
 
-    {/* HEADER */}
+    
     <h1 className="text-4xl font-bold text-center mb-8">
       Reserve a Room
     </h1>
 
-    {/* DATE SECTION */}
+   
     <div className="bg-[#f3e9d9] p-8 rounded-xl text-center mb-10 shadow-sm">
       <h2 className="text-2xl font-semibold mb-4">
         Select Your Dates
@@ -83,7 +83,7 @@ const Rooms = () => {
           </div>
           
 
-    {/* ROOMS */}
+     
     <div className="space-y-10 mt-6">
       {filteredRooms.map((room) => (
         <RoomCard

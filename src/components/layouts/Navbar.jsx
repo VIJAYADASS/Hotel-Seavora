@@ -17,7 +17,7 @@ const Navbar = () => {
     navigate("/login");
   };
 
-  // ✅ SAME COLOR FOR ALL LINKS + ACTIVE STYLE
+
   const linkClass = ({ isActive }) =>
     isActive
       ? "text-[#c58c80] font-semibold"
@@ -26,10 +26,10 @@ const Navbar = () => {
   return (
     <nav className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
 
-      {/* TOP BAR */}
+      
       <div className="flex justify-between items-center px-6 py-4">
 
-        {/* LOGO */}
+        
         <h1
           onClick={() => navigate("/")}
           className="text-2xl font-semibold cursor-pointer"
@@ -37,7 +37,7 @@ const Navbar = () => {
           Hotel Seavora
         </h1>
 
-        {/* MOBILE BUTTON */}
+        
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden text-xl"
@@ -45,7 +45,7 @@ const Navbar = () => {
           ☰
         </button>
 
-        {/* DESKTOP MENU */}
+      
         <div className="hidden md:flex gap-6 items-center text-base">
 
           <NavLink to="/" className={linkClass}>Home</NavLink>
@@ -53,7 +53,7 @@ const Navbar = () => {
           <NavLink to="/gallery" className={linkClass}>Gallery</NavLink>
           <NavLink to="/rooms" className={linkClass}>Rooms</NavLink>
 
-          {/* ✅ ADMIN FIXED */}
+          
           {user?.role === "admin" && (
             <NavLink to="/admin-dashboard" className={linkClass}>
               Admin Dashboard
@@ -63,7 +63,7 @@ const Navbar = () => {
           {!token ? (
             <div className="flex gap-2">
 
-            {/* LOGIN */}
+            
             <button
               onClick={() => navigate("/login")}
               className={`border px-4 py-1 rounded-full transition
@@ -76,7 +76,7 @@ const Navbar = () => {
               Login
             </button>
 
-            {/* SIGNUP */}
+           
             <button
               onClick={() => navigate("/signup")}
               className={` border px-4 py-1 rounded-full transition
@@ -93,12 +93,12 @@ const Navbar = () => {
           ) : (
             <div className="flex items-center gap-3">
 
-              {/* ✅ USER IN SHADCN CARD */}
+              
               <Card className="px-3 py-1 bg-gray-100 rounded-full text-sm">
                 👤 {user?.name}
               </Card>
 
-              {/* ✅ LOGOUT FIXED */}
+      
               <button
                 onClick={handleLogout}
                 className="text-[#c58c80] font-semibold hover:text-red-500"
@@ -111,7 +111,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
+      
       {open && (
         <div className="md:hidden flex flex-col gap-4 px-6 pb-4 text-base">
 
@@ -120,7 +120,7 @@ const Navbar = () => {
           <NavLink to="/gallery" className={linkClass} onClick={()=>setOpen(false)}>Gallery</NavLink>
           <NavLink to="/rooms" className={linkClass} onClick={()=>setOpen(false)}>Rooms</NavLink>
 
-          {/* ✅ ADMIN MOBILE FIX */}
+           
           {user?.role === "admin" && (
             <NavLink
               to="/admin-dashboard"
@@ -148,7 +148,7 @@ const Navbar = () => {
                 Login
               </button>
 
-              {/* MOBILE SIGNUP */}
+             
               <button
                 onClick={() => {
                   navigate("/signup");
@@ -164,9 +164,9 @@ const Navbar = () => {
                 Signup
               </button>
             </>
-          ) : (
+            ) : (
             <>
-              {/* ✅ USER CARD MOBILE */}
+               
               <Card className="px-3 py-2 bg-gray-100 rounded-lg text-sm">
                 {user?.name}
               </Card>

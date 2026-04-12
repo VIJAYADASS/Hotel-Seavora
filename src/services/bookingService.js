@@ -24,16 +24,3 @@ export const updateBookingStatus = (id, status) => {
 };
 
 
-
-// Old Code
-
-// import axios from "axios";
-
-// const API = "http://localhost:5001/api/bookings";
-
-// export const createBooking = (data) => axios.post(`${API}/create`, data);
-
-// export const getBookings = () => axios.get(API);
-
-// export const updateBookingStatus = (id, status) =>
-//   API.put(`/bookings/${id}`, { status });

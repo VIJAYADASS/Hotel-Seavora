@@ -61,7 +61,7 @@ const Facilities = () => {
   return (
     <div className="bg-[#efe5d6] w-full">
 
-      {/* 🔥 HEADER */}
+      
       <div className="px-4 md:px-10 pt-6">
         <div
           className="relative h-[40vh] md:h-[60vh] rounded-2xl overflow-hidden"
@@ -82,7 +82,7 @@ const Facilities = () => {
         </div>
       </div>
 
-      {/* 🔥 CONTENT */}
+       
       <div className="py-16 px-6 max-w-6xl mx-auto text-center">
 
         <h2 className="text-3xl font-bold mb-4">
@@ -94,7 +94,7 @@ const Facilities = () => {
           enjoyable, and memorable.
         </p>
 
-        {/* 🔥 GRID (2x2 MOBILE FIXED) */}
+         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
 
           {facilities.map((item, index) => {
@@ -120,7 +120,7 @@ const Facilities = () => {
 
         </div>
 
-        {/* 🔥 IMAGE + CONTENT SECTION */}
+         
         <div className="mt-16 grid md:grid-cols-2 gap-8 items-center">
 
           <img

@@ -13,7 +13,7 @@ import {
 const Home = () => {
   const navigate = useNavigate();
 
-  // 🔥 SLIDER IMAGES
+ 
   const images = [
     "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
     "https://images.unsplash.com/photo-1566073771259-6a8506099945",
@@ -33,52 +33,50 @@ const Home = () => {
   return (
     <div className="w-full bg-[#efe5d6]">
 
-      {/* 🔥 SLIDER */}
-        {/* 🔥 SLIDER WITH SIDE SPACE */}
-<div className="px-4 md:px-10 pt-6">
+       
+      <div className="text-center pt-14 px-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#3b2f2f] mb-3">
+          Welcome to Hotel Seavora
+        </h1>
+        <p className="text-gray-600 text-sm md:text-lg">
+          Experience Luxury Redefined
+        </p>
+      </div>
 
-  <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden rounded-2xl shadow-lg">
+       
+      <div className="px-4 md:px-10 pt-6">
+        <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden rounded-2xl shadow-lg">
 
-    {images.map((img, index) => (
-      <img
-        key={index}
-        src={img}
-        alt="slide"
-        className={`absolute w-full h-full object-cover transition-opacity duration-700 ${
-          index === current ? "opacity-100" : "opacity-0"
-        }`}
-      />
-    ))}
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt="slide"
+              className={`absolute w-full h-full object-cover transition-opacity duration-700 ${
+                index === current ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
 
-    {/* OVERLAY */}
-    <div className="absolute inset-0 bg-black/40"></div>
+         
+          <div className="absolute inset-0 bg-black/40"></div>
 
-    {/* TEXT */}
-    <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-      <h1 className="text-3xl md:text-5xl font-bold mb-4">
-        Welcome to Hotel Seavora
-      </h1>
-      <p className="text-sm md:text-lg">
-        Experience Luxury Redefined
-      </p>
-    </div>
+        
+          <div className="absolute bottom-4 flex gap-2 justify-center w-full">
+            {images.map((_, i) => (
+              <div
+                key={i}
+                className={`w-3 h-3 rounded-full ${
+                  current === i ? "bg-white" : "bg-gray-400"
+                }`}
+              ></div>
+            ))}
+          </div>
 
-    {/* DOTS */}
-    <div className="absolute bottom-4 flex gap-2 justify-center w-full">
-      {images.map((_, i) => (
-        <div
-          key={i}
-          className={`w-3 h-3 rounded-full ${
-            current === i ? "bg-white" : "bg-gray-400"
-          }`}
-        ></div>
-      ))}
-    </div>
+        </div>
+      </div>
 
-  </div>
-
-</div>
-      {/* ⭐ SPLIT SECTION */}
+       
       <div className="grid md:grid-cols-2 gap-8 items-center px-6 py-16 max-w-6xl mx-auto">
 
         <div>
@@ -111,7 +109,7 @@ const Home = () => {
 
       </div>
 
-      {/* ⭐ FEATURES */}
+      
       <div className="py-16 px-6">
 
         <h2 className="text-3xl font-bold text-center mb-12">
@@ -153,8 +151,7 @@ const Home = () => {
           </div>
 
         </div>
-
-        {/* BUTTON */}
+ 
         <div className="mt-10 text-center">
           <button
             onClick={() => navigate("/facilities")}
@@ -166,7 +163,7 @@ const Home = () => {
 
       </div>
 
-      {/* ⭐ WHY CHOOSE */}
+       
       <div className="py-16 px-6 bg-white">
 
         <h2 className="text-3xl font-bold text-center mb-12">
@@ -203,7 +200,7 @@ const Home = () => {
 
       </div>
 
-      {/* 🌍 PLACES */}
+     
       <div className="py-16 px-6 text-center">
 
         <h2 className="text-3xl font-bold mb-2">

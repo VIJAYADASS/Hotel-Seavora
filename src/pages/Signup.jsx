@@ -35,17 +35,15 @@ const Signup = () => {
   return (
     <div className="min-h-screen flex items-center justify-center relative">
 
-      {/* BACKGROUND */}
+       
       <img
         src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
         alt="beach"
         className="absolute inset-0 w-full h-full object-cover"
       />
-
-      {/* OVERLAY */}
+ 
       <div className="absolute inset-0 bg-black/40"></div>
-
-      {/* CARD */}
+ 
       <div className="relative bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 w-[90%] max-w-md">
 
         <h2 className="text-3xl font-bold text-center mb-2 text-[#3b2f2f]">
@@ -69,8 +67,7 @@ const Signup = () => {
             className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white focus:ring-2 focus:ring-[#c58c80]"
             onChange={(e)=>setForm({...form, email:e.target.value})}
           />
-
-          {/* PASSWORD */}
+ 
           <div className="relative">
             <input
               type={showPassword ? "text" : "password"}

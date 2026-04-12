@@ -11,15 +11,14 @@ const BookingSuccess = () => {
   return (
     <div className="min-h-screen bg-[#d9cfbd] px-4 md:px-10 py-10">
 
-        {/* TITLE */}
+       
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-10 text-[#3b2f2f]">
           Room Reservation
         </h1>
 
-        {/* CARD */}
+       
         <div className="max-w-3xl mx-auto bg-[#f3f3f3] rounded-2xl shadow-md p-6 md:p-8">
-
-          {/* SUCCESS ICON */}
+ 
           <div className="flex flex-col items-center mb-6">
             <div className="bg-green-100 p-4 rounded-full">
               <Check className="h-8 w-8 text-green-600" />
@@ -32,13 +31,13 @@ const BookingSuccess = () => {
             </p>
           </div>
 
-          {/* RESERVATION ID */}
+           
           <div className="bg-gray-200 rounded-lg px-4 py-3 flex justify-between mb-6 text-sm">
             <span className="font-medium">Reservation ID:</span>
             <span className="text-[#c58c80] font-semibold">00</span>
           </div>
 
-          {/* CUSTOMER DETAILS */}
+           
           <div className="mb-6">
             <h3 className="font-semibold mb-3">Customer Details</h3>
 
@@ -65,7 +64,7 @@ const BookingSuccess = () => {
             </div>
           </div>
 
-          {/* RESERVATION DETAILS */}
+           
           <div className="mb-6">
             <h3 className="font-semibold mb-3">Reservation Details</h3>
 
@@ -97,7 +96,7 @@ const BookingSuccess = () => {
             </div>
           </div>
 
-          {/* WHAT'S NEXT */}
+          
           <div className="bg-blue-50 border-l-4 border-blue-300 rounded-lg p-4 text-sm mb-6">
             <h4 className="font-semibold mb-2 text-[#c58c80]">
               What's Next?
@@ -113,7 +112,7 @@ const BookingSuccess = () => {
         
           <div className="space-y-4">
 
-            {/* BACK TO HOME */}
+            
             <button
               onClick={() => navigate("/")}
               className="w-full flex items-center justify-center gap-2 border border-[#c58c80] text-[#c58c80] py-3 rounded-xl hover:bg-[#c58c80] hover:text-white transition"
@@ -122,7 +121,7 @@ const BookingSuccess = () => {
               <span>Back to Home</span>
             </button>
 
-            {/* PRINT / DOWNLOAD */}
+             
             <button
               onClick={() => window.print()}
               className="w-full flex items-center justify-center gap-2 bg-[#c58c80] text-white py-3 rounded-xl shadow-md hover:bg-[#b67a6f] transition"
