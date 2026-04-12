@@ -2,22 +2,15 @@
 
 A modern full-stack hotel booking application that allows users to explore rooms, make reservations, and manage bookings. Includes a secure admin panel for managing rooms and booking statuses.
 
----
-
 ## 🚀 Live Demo
 
 *(Add your deployed link here if available)*
-
----
 
 ## 📸 Screenshots
 
 | Home Page                       
 | Booking Page                          
 | Admin Dashboard                   
-
-
----
 
 ## 🚀 Features
 
@@ -32,8 +25,6 @@ A modern full-stack hotel booking application that allows users to explore rooms
 * Manage rooms (Add / Update / Delete)
 * View all bookings
 * Update booking status via WhatsApp (Confirmed / Pending)
-
----
 
 ## 🧑‍💻 Tech Stack
 
@@ -54,16 +45,11 @@ A modern full-stack hotel booking application that allows users to explore rooms
 
 * MongoDB (Mongoose)
 
----
-
 ## 📁 Project Structure
-
 ## HOTEL/
 ├── src/        # Frontend (React)
 ├── backend/    # Backend (Node + Express)
-
-
----
+```
 
 ## ⚙️ Installation & Setup
 
@@ -73,8 +59,6 @@ A modern full-stack hotel booking application that allows users to explore rooms
 git clone https://github.com/VIJAYADASS/hotel-booking.git
 cd hotel-booking
 ```
-
----
 
 ## 🔧 Backend Setup
 
@@ -97,8 +81,6 @@ PORT=5001
 node server.js
 ```
 
----
-
 ## 🎨 Frontend Setup
 
 ```bash
@@ -106,8 +88,6 @@ cd ..
 npm install
 npm run dev
 ```
-
----
 
 ## 🔐 Environment Variables
 
@@ -119,16 +99,12 @@ JWT_SECRET=your_secret_key
 PORT=5001
 ```
 
----
-
 ## 🌐 Future Improvements
 
 * 💳 Payment integration
 * 📧 Email notifications
 * 📊 Admin analytics dashboard
 
-
----
 
 ## 📧 Contact
 
