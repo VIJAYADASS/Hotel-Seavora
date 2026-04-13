@@ -33,3 +33,6 @@ app.use("/api/bookings", bookingRoutes);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT} 🚀`);
 });
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
