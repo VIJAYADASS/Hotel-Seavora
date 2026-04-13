@@ -4,15 +4,25 @@ const authMiddleware = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
 
+    // ❌ No header
     if (!authHeader) {
       return res.status(401).json({ msg: "No token provided" });
     }
 
+    // ❌ Wrong format
     if (!authHeader.startsWith("Bearer ")) {
       return res.status(401).json({ msg: "Invalid token format" });
     }
 
     const token = authHeader.split(" ")[1];
+
+    // 🔥 NEW CHECK (IMPORTANT)
+    if (!token || token === "null" || token === "undefined") {
+      return res.status(401).json({ msg: "Invalid token value" });
+    }
+
+    // 🔥 DEBUG (temporary)
+    console.log("TOKEN:", token);
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
@@ -20,8 +30,8 @@ const authMiddleware = (req, res, next) => {
 
     next();
   } catch (err) {
-    console.log(err)
-    res.status(401).json({ msg: "Invalid token" });
+    console.log("JWT ERROR:", err.message);
+    return res.status(401).json({ msg: "Invalid token" });
   }
 };
 
