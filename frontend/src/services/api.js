@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://grateful-adaptation-production-81b1.up.railway.app/api", // ✅ keep one port only
+  baseURL: "https://hotel-seavora.onrender.com/api", // ✅ keep one port only
 });
 
 // ✅ Attach token automatically
