@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5001/api", // ✅ keep one port only
+  baseURL: "https://grateful-adaptation-production-81b1.up.railway.app", // ✅ keep one port only
 });
 
 // ✅ Attach token automatically
@@ -14,7 +14,7 @@ API.interceptors.request.use((req) => {
 });
 
 // ✅ API Calls
-export const getRooms = () => API.get("/rooms");
+export const getRooms = () => API.get("/api/rooms");
 export const signupUser = (data) => API.post("/auth/signup", data);
 export const loginUser = (data) => API.post("/auth/login", data);
 export const createBooking = (data) => API.post("/bookings", data);
