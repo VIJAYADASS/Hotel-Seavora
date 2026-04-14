@@ -184,7 +184,7 @@ export default function Gallery() {
             Ready to experience our hotel? Book your stay now.
           </p>
           <button 
-            onClick={() => navigate("/reservation")}
+            onClick={() => navigate("/rooms")}
             className="mt-4 bg-[#ea9990] text-white px-6 py-3 rounded-full">
             Reserve Now
           </button>

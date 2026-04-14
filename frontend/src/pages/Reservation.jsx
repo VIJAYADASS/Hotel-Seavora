@@ -70,7 +70,7 @@ const Reservation = () => {
 
       await createBooking({
         ...form,
-        roomId: selectedRoom?._id,
+        roomId: room?._id || selectedRoom?._id,
         totalDays: days,
         totalPrice: Total,
       });

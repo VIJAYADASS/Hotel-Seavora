@@ -32,7 +32,14 @@ const { user } = useContext(AuthContext);
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/room/:id" element={<RoomDetails />} />
-            <Route path="/reservation" element={<Reservation />} />
+            <Route
+              path="/reservation"
+              element={
+                <ProtectedRoute>
+                  <Reservation />
+                </ProtectedRoute>
+              }
+            />
             <Route path="/booking-success" element={<BookingSuccess />} />
       
             <Route
